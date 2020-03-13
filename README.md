@@ -7,7 +7,7 @@
 
 ## Screenshots
 
-### Big Screen with winner message
+
 <img src="" alt="SCREEN with winner message" >
 
 
