@@ -1,18 +1,26 @@
-  :root {
+:root {
     --box: #f2e709;
     --letter: #fff;
     --back: #373666;
     --symbol: #766df2;
 
     --mainFont: 2em;
-  }
+}
+
+
 * {
     color: var(--box);
     font-size: var(--mainFont);
 }
 .hello {
-    color: var(--symbol);
+    color: var(--back);
+    font-family: 'MyFont';
 }
 #content {
-    background: url('./images/addo.jpg');
+    background: url('./images/bigS.png');
+}
+.containerOne {
+    width: 100%;
+    height: 80em;
+    background: var(--back);
 }

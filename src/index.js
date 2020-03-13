@@ -1,20 +1,30 @@
 import _ from 'lodash';
 import './style.css';
 import addo from './images/bigS.png';
+import Data from './data.xml';
+import header from '../component/header';
+import main from '../component/main';
 
-function component() {
-    const element = document.createElement('div');
+const container = (() => {
+    header();
+    main();
+    const greeting = () => {
+        const element = document.createElement('div');
 
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-    element.classList.add('hello');
+        element.innerHTML = _.join(['Hello', 'webpack', 'team24BBssss'], ' ');
+        element.classList.add('hello');
 
-    const myAddo = new Image();
-    myAddo.src = addo;
+        const myImage = new Image();
+        myImage.src = addo;
 
-    element.appendChild(myAddo);
+        element.appendChild(myImage);
 
-    return element;
-}
+        console.log(Data);
+    }
 
-document.body.appendChild(component());
-console.log('welcome to webpack by daniel!!!');
+    return {greeting, header, main};
+})();
+
+// container.appendChild(intro());
+
+document.body.appendChild(container());
