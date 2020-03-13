@@ -1,7 +1,7 @@
 # Restaurant-Page
 
 
-> This project is part of a series of projects to be completed by students of microverse.org. Building a Restaurant Page > using vanilla Javascript.
+> This project is part of a series of projects to be completed by students of microverse.org. Building a Restaurant Page using vanilla Javascript.
 
 ## Description
 
