@@ -1,3 +1,33 @@
+/* eslint-disable padded-blocks */
+/* eslint-disable no-eval */
+/* eslint-disable no-unused-vars */
+/* eslint-disable max-len */
+/* eslint-disable no-unexpected-multiline */
+/* eslint-disable no-spaced-func */
+/* eslint-disable func-call-spacing */
+/* eslint-disable no-return-assign */
+/* eslint-disable quotes */
+/* eslint-disable dot-notation */
+/* eslint-disable operator-linebreak */
+/* eslint-disable eqeqeq */
+/* eslint-disable object-shorthand */
+/* eslint-disable no-restricted-syntax */
+/* eslint-disable prefer-arrow-callback */
+/* eslint-disable guard-for-in */
+/* eslint-disable no-bitwise */
+/* eslint-disable vars-on-top */
+/* eslint-disable comma-dangle */
+/* eslint-disable no-multi-assign */
+/* eslint-disable keyword-spacing */
+/* eslint-disable indent */
+/* eslint-disable no-underscore-dangle */
+/* eslint-disable camelcase */
+/* eslint-disable no-var */
+/* eslint-disable no-tabs */
+/* eslint-disable spaced-comment */
+/* eslint-disable space-before-function-paren */
+/* eslint-disable wrap-iife */
+/* eslint-disable func-names */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -24,6 +54,7 @@
 /******/
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
+// eslint-disable-next-line indent
 /******/ 	}
 /******/
 /******/
@@ -93,8 +124,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("alert('hiii');\n\n//# sourceURL=webpack:///./src/index.js?");
+  eval("/* eslint-disable no-unused-expressions */\r\n/* eslint-disable indent */\r\n/* eslint-disable linebreak-style */\r\n/* eslint-disable no-unused-vars */\r\nconst content = document.querySelector('#content');\r\n\r\nconst nav = () => {\r\n    `<nav>\r\n        <ul>\r\n            <li>one</li>\r\n            <li>two</li>\r\n            <li>three</li>\r\n        </ul>\r\n    </nav>`;\r\n};\r\n\r\ncontent.appendChild(nav());\n\n//# sourceURL=webpack:///./src/index.js?");
 
-/***/ })
-
-/******/ });
+  /***/ })
+  /******/ });
