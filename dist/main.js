@@ -1,33 +1,3 @@
-/* eslint-disable padded-blocks */
-/* eslint-disable no-eval */
-/* eslint-disable no-unused-vars */
-/* eslint-disable max-len */
-/* eslint-disable no-unexpected-multiline */
-/* eslint-disable no-spaced-func */
-/* eslint-disable func-call-spacing */
-/* eslint-disable no-return-assign */
-/* eslint-disable quotes */
-/* eslint-disable dot-notation */
-/* eslint-disable operator-linebreak */
-/* eslint-disable eqeqeq */
-/* eslint-disable object-shorthand */
-/* eslint-disable no-restricted-syntax */
-/* eslint-disable prefer-arrow-callback */
-/* eslint-disable guard-for-in */
-/* eslint-disable no-bitwise */
-/* eslint-disable vars-on-top */
-/* eslint-disable comma-dangle */
-/* eslint-disable no-multi-assign */
-/* eslint-disable keyword-spacing */
-/* eslint-disable indent */
-/* eslint-disable no-underscore-dangle */
-/* eslint-disable camelcase */
-/* eslint-disable no-var */
-/* eslint-disable no-tabs */
-/* eslint-disable spaced-comment */
-/* eslint-disable space-before-function-paren */
-/* eslint-disable wrap-iife */
-/* eslint-disable func-names */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -54,7 +24,6 @@
 /******/
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
-// eslint-disable-next-line indent
 /******/ 	}
 /******/
 /******/
@@ -121,10 +90,36 @@
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-  eval("/* eslint-disable no-unused-expressions */\r\n/* eslint-disable indent */\r\n/* eslint-disable linebreak-style */\r\n/* eslint-disable no-unused-vars */\r\nconst content = document.querySelector('#content');\r\n\r\nconst nav = () => {\r\n    `<nav>\r\n        <ul>\r\n            <li>one</li>\r\n            <li>two</li>\r\n            <li>three</li>\r\n        </ul>\r\n    </nav>`;\r\n};\r\n\r\ncontent.appendChild(nav());\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _layout_main__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./layout/main */ \"./src/layout/main.js\");\n/* eslint-disable linebreak-style */\r\n/* eslint-disable semi */\r\n/* eslint-disable no-console */\r\n/* eslint-disable indent */\r\n/* eslint-disable linebreak-style */\r\n/* eslint-disable no-unused-expressions */\r\n\r\n\r\n// const main = () => {\r\n//     console.log('hi am main');\r\n// };\r\n\r\n// const footer = () => {\r\n//     console.log('i am footer');\r\n// };\r\n\r\nconst content = document.querySelector('#content');\r\ncontent.appendChild(Object(_layout_main__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\n\n//# sourceURL=webpack:///./src/index.js?");
 
-  /***/ })
-  /******/ });
+/***/ }),
+
+/***/ "./src/layout/main.js":
+/*!****************************!*\
+  !*** ./src/layout/main.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./nav */ \"./src/layout/nav.js\");\n/* eslint-disable semi */\r\n/* eslint-disable import/no-cycle */\r\n/* eslint-disable linebreak-style */\r\n/* eslint-disable indent */\r\n/* eslint-disable no-console */\r\n\r\n\r\n\r\n/* eslint-disable linebreak-style */\r\nconst main = () => {\r\n    Object(_nav__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (main);\n\n//# sourceURL=webpack:///./src/layout/main.js?");
+
+/***/ }),
+
+/***/ "./src/layout/nav.js":
+/*!***************************!*\
+  !*** ./src/layout/nav.js ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main */ \"./src/layout/main.js\");\n/* eslint-disable linebreak-style */\r\n/* eslint-disable import/no-cycle */\r\n/* eslint-disable no-unused-vars */\r\n/* eslint-disable no-multiple-empty-lines */\r\n/* eslint-disable linebreak-style */\r\n\r\n\r\n\r\n\r\nconst nav = () => {\r\n  const content = document.getElementById('content');\r\n  const nav = document.createElement('div');\r\n  nav.className = 'navbar';\r\n  content.appendChild(nav);\r\n  const logo = document.createElement('img');\r\n  logo.setAttribute('src', '../dist/images/re.jpg');\r\n  nav.appendChild(logo);\r\n  const navItems = document.createElement('div');\r\n  navItems.className = 'nav-items';\r\n  nav.appendChild(navItems);\r\n\r\n  const element = document.createElement('span');\r\n  element.innerHTML = 'HOME';\r\n  element.addEventListener('click', () => {\r\n    content.innerHTML = '';\r\n    Object(_main__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n  });\r\n  navItems.appendChild(element);\r\n\r\n  const element2 = document.createElement('SPAN');\r\n  element2.innerHTML = 'CONTACT US';\r\n  element2.addEventListener('click', () => {\r\n    content.innerHTML = '';\r\n    Object(_main__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n  });\r\n  navItems.appendChild(element2);\r\n\r\n  const element3 = document.createElement('SPAN');\r\n  element3.innerHTML = 'MENU';\r\n  element3.addEventListener('click', () => {\r\n    content.innerHTML = '';\r\n    Object(_main__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n  });\r\n  navItems.appendChild(element3);\r\n};\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (nav);\n\n//# sourceURL=webpack:///./src/layout/nav.js?");
+
+/***/ })
+
+/******/ });

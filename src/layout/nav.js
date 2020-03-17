@@ -1,25 +1,29 @@
-import menu from './menu';
-import home from './home';
-import contact from './contact';
+/* eslint-disable linebreak-style */
+/* eslint-disable import/no-cycle */
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-multiple-empty-lines */
+/* eslint-disable linebreak-style */
+import main from './main';
+
+
 
 const nav = () => {
   const content = document.getElementById('content');
-  const nav = document.createElement('DIV');
+  const nav = document.createElement('div');
   nav.className = 'navbar';
   content.appendChild(nav);
-  const logo = document.createElement('IMG');
-  logo.setAttribute('src', './images/logo.png');
+  const logo = document.createElement('img');
+  logo.setAttribute('src', '../dist/images/re.jpg');
   nav.appendChild(logo);
-  const navItems = document.createElement('DIV');
+  const navItems = document.createElement('div');
   navItems.className = 'nav-items';
   nav.appendChild(navItems);
 
-  const element = document.createElement('SPAN');
+  const element = document.createElement('span');
   element.innerHTML = 'HOME';
   element.addEventListener('click', () => {
     content.innerHTML = '';
-    navbar();
-    home();
+    main();
   });
   navItems.appendChild(element);
 
@@ -27,8 +31,7 @@ const nav = () => {
   element2.innerHTML = 'CONTACT US';
   element2.addEventListener('click', () => {
     content.innerHTML = '';
-    navbar();
-    contact();
+    main();
   });
   navItems.appendChild(element2);
 
@@ -36,8 +39,7 @@ const nav = () => {
   element3.innerHTML = 'MENU';
   element3.addEventListener('click', () => {
     content.innerHTML = '';
-    navbar();
-    menu();
+    main();
   });
   navItems.appendChild(element3);
 };

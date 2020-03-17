@@ -1,17 +1,10 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable semi */
 /* eslint-disable no-console */
 /* eslint-disable indent */
 /* eslint-disable linebreak-style */
 /* eslint-disable no-unused-expressions */
-const nav = () => {
-    // eslint-disable-next-line indent
-    `<nav>
-    <ul>
-        <li>one</li>
-        <li>two</li>
-        <li>three</li>
-    </ul>
-    </nav>`;
-};
+import main from './layout/main'
 
 // const main = () => {
 //     console.log('hi am main');
@@ -22,4 +15,4 @@ const nav = () => {
 // };
 
 const content = document.querySelector('#content');
-content.appendChild(nav());
+content.appendChild(main());
