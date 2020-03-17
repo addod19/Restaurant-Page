@@ -94,7 +94,31 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _layout_main__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./layout/main */ \"./src/layout/main.js\");\n/* eslint-disable linebreak-style */\r\n/* eslint-disable semi */\r\n/* eslint-disable no-console */\r\n/* eslint-disable indent */\r\n/* eslint-disable linebreak-style */\r\n/* eslint-disable no-unused-expressions */\r\n\r\n\r\n// const main = () => {\r\n//     console.log('hi am main');\r\n// };\r\n\r\n// const footer = () => {\r\n//     console.log('i am footer');\r\n// };\r\n\r\nconst content = document.querySelector('#content');\r\ncontent.appendChild(Object(_layout_main__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _layout_main__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./layout/main */ \"./src/layout/main.js\");\n/* eslint-disable no-multiple-empty-lines */\r\n/* eslint-disable linebreak-style */\r\n/* eslint-disable semi */\r\n/* eslint-disable no-console */\r\n/* eslint-disable indent */\r\n/* eslint-disable linebreak-style */\r\n/* eslint-disable no-unused-expressions */\r\n\r\n\r\nconst content = document.querySelector('#content');\r\ncontent.appendChild(Object(_layout_main__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/layout/contactUs.js":
+/*!*********************************!*\
+  !*** ./src/layout/contactUs.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* eslint-disable linebreak-style */\r\n/* eslint-disable indent */\r\n/* eslint-disable no-undef */\r\n/* eslint-disable template-tag-spacing */\r\n/* eslint-disable no-unused-expressions */\r\nconst contactUs = () => {\r\n  const content = document.querySelector('#content');\r\n  const contact = document.createElement('div');\r\n\r\n  content.appendChild(contact);\r\n\r\n  contact.innerHTML = `\r\n    <div class=\"contact-wrapper\">\r\n        <div>You can contact us on the following: facebook instagram phone </div>\r\n    </div>\r\n  `;\r\n};\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (contactUs);\n\n//# sourceURL=webpack:///./src/layout/contactUs.js?");
+
+/***/ }),
+
+/***/ "./src/layout/home.js":
+/*!****************************!*\
+  !*** ./src/layout/home.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* eslint-disable linebreak-style */\r\n/* eslint-disable arrow-body-style */\r\n/* eslint-disable linebreak-style */\r\nconst home = () => {\r\n  const content = document.querySelector('#content');\r\n  const homePage = document.createElement('div');\r\n\r\n  content.appendChild(homePage);\r\n\r\n  homePage.innerHTML = `\r\n    <h2>This is testing</h2>\r\n  `;\r\n};\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (home);\n\n//# sourceURL=webpack:///./src/layout/home.js?");
 
 /***/ }),
 
@@ -110,6 +134,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nav
 
 /***/ }),
 
+/***/ "./src/layout/menu.js":
+/*!****************************!*\
+  !*** ./src/layout/menu.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst menu = () => {\r\n    console.log('hi am menu');\r\n};\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (menu);\n\n//# sourceURL=webpack:///./src/layout/menu.js?");
+
+/***/ }),
+
 /***/ "./src/layout/nav.js":
 /*!***************************!*\
   !*** ./src/layout/nav.js ***!
@@ -118,7 +154,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nav
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main */ \"./src/layout/main.js\");\n/* eslint-disable linebreak-style */\r\n/* eslint-disable import/no-cycle */\r\n/* eslint-disable no-unused-vars */\r\n/* eslint-disable no-multiple-empty-lines */\r\n/* eslint-disable linebreak-style */\r\n\r\n\r\n\r\n\r\nconst nav = () => {\r\n  const content = document.getElementById('content');\r\n  const nav = document.createElement('div');\r\n  nav.className = 'navbar';\r\n  content.appendChild(nav);\r\n  const logo = document.createElement('img');\r\n  logo.setAttribute('src', '../dist/images/re.jpg');\r\n  nav.appendChild(logo);\r\n  const navItems = document.createElement('div');\r\n  navItems.className = 'nav-items';\r\n  nav.appendChild(navItems);\r\n\r\n  const element = document.createElement('span');\r\n  element.innerHTML = 'HOME';\r\n  element.addEventListener('click', () => {\r\n    content.innerHTML = '';\r\n    Object(_main__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n  });\r\n  navItems.appendChild(element);\r\n\r\n  const element2 = document.createElement('SPAN');\r\n  element2.innerHTML = 'CONTACT US';\r\n  element2.addEventListener('click', () => {\r\n    content.innerHTML = '';\r\n    Object(_main__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n  });\r\n  navItems.appendChild(element2);\r\n\r\n  const element3 = document.createElement('SPAN');\r\n  element3.innerHTML = 'MENU';\r\n  element3.addEventListener('click', () => {\r\n    content.innerHTML = '';\r\n    Object(_main__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n  });\r\n  navItems.appendChild(element3);\r\n};\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (nav);\n\n//# sourceURL=webpack:///./src/layout/nav.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main */ \"./src/layout/main.js\");\n/* harmony import */ var _contactUs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./contactUs */ \"./src/layout/contactUs.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home */ \"./src/layout/home.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./menu */ \"./src/layout/menu.js\");\n/* eslint-disable no-undef */\r\n/* eslint-disable linebreak-style */\r\n/* eslint-disable import/no-cycle */\r\n/* eslint-disable no-unused-vars */\r\n/* eslint-disable no-multiple-empty-lines */\r\n/* eslint-disable linebreak-style */\r\n\r\n\r\n\r\n\r\n\r\n\r\nconst nav = () => {\r\n  const content = document.getElementById('content');\r\n  const nav = document.createElement('div');\r\n  nav.className = 'nav';\r\n  content.appendChild(nav);\r\n  // const logo = document.createElement('img');\r\n  // logo.setAttribute('src', '../dist/images/re.jpg');\r\n  // nav.appendChild(logo);\r\n  const navItems = document.createElement('div');\r\n  navItems.className = 'nav-items';\r\n  nav.appendChild(navItems);\r\n\r\n  const element = document.createElement('span');\r\n  element.innerHTML = 'HOME';\r\n  element.addEventListener('click', () => {\r\n    content.innerHTML = '';\r\n    Object(_main__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n    content.appendChild(Object(_home__WEBPACK_IMPORTED_MODULE_2__[\"default\"])());\r\n  });\r\n  navItems.appendChild(element);\r\n\r\n  const element2 = document.createElement('SPAN');\r\n  element2.innerHTML = 'CONTACT US';\r\n  element2.addEventListener('click', () => {\r\n    content.innerHTML = '';\r\n    Object(_main__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n    Object(_contactUs__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n  });\r\n  navItems.appendChild(element2);\r\n\r\n  const element3 = document.createElement('SPAN');\r\n  element3.innerHTML = 'MENU';\r\n  element3.addEventListener('click', () => {\r\n    content.innerHTML = '';\r\n    Object(_main__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n    Object(_menu__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\r\n  });\r\n  navItems.appendChild(element3);\r\n};\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (nav);\n\n//# sourceURL=webpack:///./src/layout/nav.js?");
 
 /***/ })
 

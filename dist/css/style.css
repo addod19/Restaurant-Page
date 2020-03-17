@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    color: red;
+}
+img {
+    width: 100%;
+}
+.logo {
+    border-radius: 50%;
+    height: 10em;
+    width: 10em;
+}
+.nav-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1em;
+    text-align: center;
+}
+span:hover {
+    background: black;
+    color: blanchedalmond;
+    align-self: center;
+    cursor: pointer;
+}
+.contentBg {
+    /* background: url(http://127.0.0.1:5500/dist/images/re.jpg) no-repeat; */
+    height: 200em;
+}
