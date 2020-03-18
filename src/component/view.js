@@ -11,7 +11,19 @@
 // // content.style.backgroundImage = "url('re.jpg')";
 // content.appendChild(main());
 
-import view from './component/view';
+// import myNav from './layout/nav';
+// import main from './layout/main';
+import myNav from './nav';
+import main from './main';
 
+const view = (() => {
+    myNav();
+    main();
 
-view();
+    return {
+        myNav,
+        main,
+    }
+})();
+
+export default view;

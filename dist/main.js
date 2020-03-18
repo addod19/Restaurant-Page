@@ -86,6 +86,66 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/component/contact.js":
+/*!**********************************!*\
+  !*** ./src/component/contact.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* eslint-disable linebreak-style */\r\nconst contact = () => {\r\n  const content = document.getElementById('content');\r\n\r\n  const container = document.createElement('div');\r\n  container.className = 'contactContainer';\r\n  content.appendChild(container);\r\n\r\n  const textContent = document.createElement('div');\r\n  textContent.className = 'textContent';\r\n  container.appendChild(textContent);\r\n\r\n  const contactHeading = document.createElement('h1');\r\n  contactHeading.innerText = 'CONTACT';\r\n  textContent.appendChild(contactHeading);\r\n\r\n  const subText = document.createElement('h2');\r\n  subText.innerText = 'RESTAURANT KROMOSOME';\r\n  textContent.appendChild(subText);\r\n\r\n  const elementText = ['ACCRA', 'DANSOMAN FIRST-STOP', 'GHANA', '+233 207 312 909', 'kromo@info.com'];\r\n\r\n  for (let i = 0; i < elementText.length; i += 1) {\r\n    const contactElement = document.createElement('h4');\r\n    contactElement.innerText = elementText[i];\r\n    textContent.appendChild(contactElement);\r\n  }\r\n};\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (contact);\n\n//# sourceURL=webpack:///./src/component/contact.js?");
+
+/***/ }),
+
+/***/ "./src/component/main.js":
+/*!*******************************!*\
+  !*** ./src/component/main.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* eslint-disable linebreak-style */\r\n/* eslint-disable indent */\r\n/* eslint-disable linebreak-style */\r\nconst main = () => {\r\n  const content = document.getElementById('content');\r\n\r\n  const container = document.createElement('div');\r\n  container.className = 'mainContainer';\r\n  content.appendChild(container);\r\n\r\n  const main = document.createElement('div');\r\n  main.className = 'main';\r\n  container.appendChild(main);\r\n\r\n  const heading = document.createElement('h2');\r\n  heading.innerHTML = 'WELCOME EVERYBODY!';\r\n  heading.classList.add('heading');\r\n  main.appendChild(heading);\r\n\r\n  const text = ['lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem',\r\n      'lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem, lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem, lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem.',\r\n      'lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem'];\r\n  for (let i = 0; i < text.length; i += 1) {\r\n    const element = document.createElement('p');\r\n    element.innerHTML = text[i].toUpperCase();\r\n    main.appendChild(element);\r\n  }\r\n};\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (main);\n\n//# sourceURL=webpack:///./src/component/main.js?");
+
+/***/ }),
+
+/***/ "./src/component/menu.js":
+/*!*******************************!*\
+  !*** ./src/component/menu.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* eslint-disable linebreak-style */\r\n/* eslint-disable no-trailing-spaces */\r\n/* eslint-disable linebreak-style */\r\n// import styles from '../css/style.css';\r\n\r\nconst menu = () => {\r\n  const container = document.getElementById('content');\r\n  // container.className = styles['menu-main'];\r\n\r\n  const menuHeader = document.createElement('h1');\r\n  menuHeader.className = 'menuHead';\r\n  menuHeader.innerText = 'MENU';\r\n\r\n  const menuContainer = document.createElement('div');\r\n  menuContainer.className = 'menuContainer';\r\n  container.appendChild(menuContainer);\r\n  \r\n  const imgArr = ['res', 'res1', 'res2', 'res3', 'res4', 're1', 're2'];\r\n\r\n  for (let i = 0; i < 6; i += 1) {\r\n    const description = 'Lorem ipsum dolor sit amet consectetur, lorem lorem lorem lorem. lorem lorem lorem lorem';\r\n\r\n    const pdt = document.createElement('div');\r\n    pdt.className = 'product';\r\n    menuContainer.appendChild(pdt);\r\n\r\n    const img = new Image();\r\n    img.setAttribute('src', `/dist/images/${imgArr[i]}.jpg`);\r\n    pdt.appendChild(img);\r\n\r\n    const descrip = document.createElement('p');\r\n    descrip.className = 'description';\r\n    descrip.innerText = description;\r\n    pdt.appendChild(descrip);\r\n  }\r\n};\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (menu);\n\n//# sourceURL=webpack:///./src/component/menu.js?");
+
+/***/ }),
+
+/***/ "./src/component/nav.js":
+/*!******************************!*\
+  !*** ./src/component/nav.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./menu */ \"./src/component/menu.js\");\n/* harmony import */ var _main__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./main */ \"./src/component/main.js\");\n/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contact */ \"./src/component/contact.js\");\n/* eslint-disable linebreak-style */\r\n\r\n\r\n\r\n// import styles from '../css/style';\r\n\r\nconst myNav = () => {\r\n  const content = document.getElementById('content');\r\n  const nav = document.createElement('div');\r\n  nav.className = 'nav';\r\n  content.appendChild(nav);\r\n  const logo = new Image();\r\n  logo.setAttribute('src', '/dist/images/re1.jpg');\r\n  logo.classList.add('logo');\r\n  nav.appendChild(logo);\r\n  const navItems = document.createElement('div');\r\n  navItems.className = 'nav-items';\r\n  nav.appendChild(navItems);\r\n\r\n  const element = document.createElement('a');\r\n  element.innerHTML = 'MAIN';\r\n  element.addEventListener('click', () => {\r\n    content.innerHTML = '';\r\n    myNav();\r\n    Object(_main__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n  });\r\n  navItems.appendChild(element);\r\n\r\n  const element2 = document.createElement('a');\r\n  element2.innerHTML = 'CONTACT US';\r\n  element2.addEventListener('click', () => {\r\n    content.innerHTML = '';\r\n    myNav();\r\n    Object(_contact__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\r\n  });\r\n  navItems.appendChild(element2);\r\n\r\n  const element3 = document.createElement('a');\r\n  element3.innerHTML = 'MENU';\r\n  element3.addEventListener('click', () => {\r\n    content.innerHTML = '';\r\n    myNav();\r\n    Object(_menu__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n  });\r\n  navItems.appendChild(element3);\r\n};\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (myNav);\n\n//# sourceURL=webpack:///./src/component/nav.js?");
+
+/***/ }),
+
+/***/ "./src/component/view.js":
+/*!*******************************!*\
+  !*** ./src/component/view.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./nav */ \"./src/component/nav.js\");\n/* harmony import */ var _main__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./main */ \"./src/component/main.js\");\n/* eslint-disable no-multiple-empty-lines */\r\n/* eslint-disable linebreak-style */\r\n/* eslint-disable semi */\r\n/* eslint-disable no-console */\r\n/* eslint-disable indent */\r\n/* eslint-disable linebreak-style */\r\n/* eslint-disable no-unused-expressions */\r\n// import main from './layout/main';\r\n\r\n// const content = document.querySelector('#content');\r\n// // content.style.backgroundImage = \"url('re.jpg')\";\r\n// content.appendChild(main());\r\n\r\n// import myNav from './layout/nav';\r\n// import main from './layout/main';\r\n\r\n\r\n\r\nconst view = (() => {\r\n    Object(_nav__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n    Object(_main__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n\r\n    return {\r\n        myNav: _nav__WEBPACK_IMPORTED_MODULE_0__[\"default\"],\r\n        main: _main__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\r\n    }\r\n})();\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (view);\n\n//# sourceURL=webpack:///./src/component/view.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -94,67 +154,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _layout_main__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./layout/main */ \"./src/layout/main.js\");\n/* eslint-disable no-multiple-empty-lines */\r\n/* eslint-disable linebreak-style */\r\n/* eslint-disable semi */\r\n/* eslint-disable no-console */\r\n/* eslint-disable indent */\r\n/* eslint-disable linebreak-style */\r\n/* eslint-disable no-unused-expressions */\r\n\r\n\r\nconst content = document.querySelector('#content');\r\ncontent.appendChild(Object(_layout_main__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\n\n//# sourceURL=webpack:///./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/layout/contactUs.js":
-/*!*********************************!*\
-  !*** ./src/layout/contactUs.js ***!
-  \*********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* eslint-disable linebreak-style */\r\n/* eslint-disable indent */\r\n/* eslint-disable no-undef */\r\n/* eslint-disable template-tag-spacing */\r\n/* eslint-disable no-unused-expressions */\r\nconst contactUs = () => {\r\n  const content = document.querySelector('#content');\r\n  const contact = document.createElement('div');\r\n\r\n  content.appendChild(contact);\r\n\r\n  contact.innerHTML = `\r\n    <div class=\"contact-wrapper\">\r\n        <div>You can contact us on the following: facebook instagram phone </div>\r\n    </div>\r\n  `;\r\n};\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (contactUs);\n\n//# sourceURL=webpack:///./src/layout/contactUs.js?");
-
-/***/ }),
-
-/***/ "./src/layout/home.js":
-/*!****************************!*\
-  !*** ./src/layout/home.js ***!
-  \****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* eslint-disable linebreak-style */\r\n/* eslint-disable arrow-body-style */\r\n/* eslint-disable linebreak-style */\r\nconst home = () => {\r\n  const content = document.querySelector('#content');\r\n  const homePage = document.createElement('div');\r\n\r\n  content.appendChild(homePage);\r\n\r\n  homePage.innerHTML = `\r\n    <h2>This is testing</h2>\r\n  `;\r\n};\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (home);\n\n//# sourceURL=webpack:///./src/layout/home.js?");
-
-/***/ }),
-
-/***/ "./src/layout/main.js":
-/*!****************************!*\
-  !*** ./src/layout/main.js ***!
-  \****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./nav */ \"./src/layout/nav.js\");\n/* eslint-disable semi */\r\n/* eslint-disable import/no-cycle */\r\n/* eslint-disable linebreak-style */\r\n/* eslint-disable indent */\r\n/* eslint-disable no-console */\r\n\r\n\r\n\r\n/* eslint-disable linebreak-style */\r\nconst main = () => {\r\n    Object(_nav__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (main);\n\n//# sourceURL=webpack:///./src/layout/main.js?");
-
-/***/ }),
-
-/***/ "./src/layout/menu.js":
-/*!****************************!*\
-  !*** ./src/layout/menu.js ***!
-  \****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nconst menu = () => {\r\n    console.log('hi am menu');\r\n};\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (menu);\n\n//# sourceURL=webpack:///./src/layout/menu.js?");
-
-/***/ }),
-
-/***/ "./src/layout/nav.js":
-/*!***************************!*\
-  !*** ./src/layout/nav.js ***!
-  \***************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main */ \"./src/layout/main.js\");\n/* harmony import */ var _contactUs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./contactUs */ \"./src/layout/contactUs.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home */ \"./src/layout/home.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./menu */ \"./src/layout/menu.js\");\n/* eslint-disable no-undef */\r\n/* eslint-disable linebreak-style */\r\n/* eslint-disable import/no-cycle */\r\n/* eslint-disable no-unused-vars */\r\n/* eslint-disable no-multiple-empty-lines */\r\n/* eslint-disable linebreak-style */\r\n\r\n\r\n\r\n\r\n\r\n\r\nconst nav = () => {\r\n  const content = document.getElementById('content');\r\n  const nav = document.createElement('div');\r\n  nav.className = 'nav';\r\n  content.appendChild(nav);\r\n  // const logo = document.createElement('img');\r\n  // logo.setAttribute('src', '../dist/images/re.jpg');\r\n  // nav.appendChild(logo);\r\n  const navItems = document.createElement('div');\r\n  navItems.className = 'nav-items';\r\n  nav.appendChild(navItems);\r\n\r\n  const element = document.createElement('span');\r\n  element.innerHTML = 'HOME';\r\n  element.addEventListener('click', () => {\r\n    content.innerHTML = '';\r\n    Object(_main__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n    content.appendChild(Object(_home__WEBPACK_IMPORTED_MODULE_2__[\"default\"])());\r\n  });\r\n  navItems.appendChild(element);\r\n\r\n  const element2 = document.createElement('SPAN');\r\n  element2.innerHTML = 'CONTACT US';\r\n  element2.addEventListener('click', () => {\r\n    content.innerHTML = '';\r\n    Object(_main__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n    Object(_contactUs__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n  });\r\n  navItems.appendChild(element2);\r\n\r\n  const element3 = document.createElement('SPAN');\r\n  element3.innerHTML = 'MENU';\r\n  element3.addEventListener('click', () => {\r\n    content.innerHTML = '';\r\n    Object(_main__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n    Object(_menu__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\r\n  });\r\n  navItems.appendChild(element3);\r\n};\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (nav);\n\n//# sourceURL=webpack:///./src/layout/nav.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _component_view__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./component/view */ \"./src/component/view.js\");\n/* eslint-disable no-multiple-empty-lines */\r\n/* eslint-disable linebreak-style */\r\n/* eslint-disable semi */\r\n/* eslint-disable no-console */\r\n/* eslint-disable indent */\r\n/* eslint-disable linebreak-style */\r\n/* eslint-disable no-unused-expressions */\r\n// import main from './layout/main';\r\n\r\n// const content = document.querySelector('#content');\r\n// // content.style.backgroundImage = \"url('re.jpg')\";\r\n// content.appendChild(main());\r\n\r\n\r\n\r\n\r\nObject(_component_view__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

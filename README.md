@@ -12,7 +12,8 @@
 
 - HTML,
 - CSS,
-- Javascript
+- Javascript es6 module, es6 classes
+- Webpack
 
 ## Live Demo
 
