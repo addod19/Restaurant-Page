@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable no-multiple-empty-lines */
 /* eslint-disable linebreak-style */
 /* eslint-disable semi */
@@ -11,8 +12,7 @@
 // // content.style.backgroundImage = "url('re.jpg')";
 // content.appendChild(main());
 
-// import myNav from './layout/nav';
-// import main from './layout/main';
+
 import myNav from './nav';
 import main from './main';
 

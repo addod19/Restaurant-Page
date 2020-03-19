@@ -7,9 +7,7 @@
 /* eslint-disable no-unused-expressions */
 // import main from './layout/main';
 
-// const content = document.querySelector('#content');
-// // content.style.backgroundImage = "url('re.jpg')";
-// content.appendChild(main());
+
 
 import view from './component/view';
 

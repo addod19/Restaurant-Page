@@ -23,9 +23,11 @@ const menu = () => {
     const pdt = document.createElement('div');
     pdt.className = 'product';
     menuContainer.appendChild(pdt);
+    // console.log(menuContainer);
 
     const img = new Image();
     img.setAttribute('src', `/dist/images/${imgArr[i]}.jpg`);
+    img.className = 'img img-rounded';
     pdt.appendChild(img);
 
     const descrip = document.createElement('p');

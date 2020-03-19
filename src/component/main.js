@@ -7,18 +7,17 @@ const main = () => {
   const container = document.createElement('div');
   container.className = 'mainContainer';
   content.appendChild(container);
-
+  // console.log(container);
   const main = document.createElement('div');
-  main.className = 'main';
+  main.className = 'main row';
   container.appendChild(main);
-
+  // console.log(main);
   const heading = document.createElement('h2');
   heading.innerHTML = 'WELCOME EVERYBODY!';
   heading.classList.add('heading');
   main.appendChild(heading);
 
   const text = ['lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem',
-      'lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem, lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem, lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem.',
       'lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem'];
   for (let i = 0; i < text.length; i += 1) {
     const element = document.createElement('p');
