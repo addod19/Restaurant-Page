@@ -26,6 +26,13 @@
 .heading {
     text-align: center;
 }
+a {
+    color: chartreuse !important;
+}
+a:hover {
+    cursor: pointer;
+    color: crimson !important;
+}
 @media screen and(max-width: 768px) {
 
 }

@@ -17,11 +17,12 @@ const main = () => {
   heading.classList.add('heading');
   main.appendChild(heading);
 
-  const text = ['lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem',
-      'lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem'];
+  const text = ['We have a variety of local and continental dishes you can choose from',
+      'Enjoy the beauty of our siren environment and great food'];
+  console.log(text)
   for (let i = 0; i < text.length; i += 1) {
     const element = document.createElement('p');
-    element.innerHTML = text[i].toUpperCase();
+    element.innerHTML = text[i];
     main.appendChild(element);
   }
 };
