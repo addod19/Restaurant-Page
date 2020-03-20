@@ -14,6 +14,7 @@
 - CSS,
 - Javascript es6 module, es6 classes
 - Webpack
+- Bootstrap
 
 ## Live Demo
 
