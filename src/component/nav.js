@@ -6,7 +6,7 @@ import contact from './contact';
 const myNav = () => {
   const content = document.getElementById('content');
   const nav = document.createElement('nav');
-  nav.className = 'navbar navbar-expand-lg navbar-light bg-light';
+  nav.className = 'navbar navbar-expand-lg navbar-light bg-light custom';
   content.appendChild(nav);
 
   const btn = document.createElement('button');

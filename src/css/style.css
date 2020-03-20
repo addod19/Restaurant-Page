@@ -26,6 +26,9 @@
 .heading {
     text-align: center;
 }
+.custom {
+    background: transparent;
+}
 a {
     color: chartreuse !important;
 }
