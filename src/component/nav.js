@@ -13,7 +13,7 @@ const myNav = () => {
   btn.setAttribute('type', 'button');
   btn.setAttribute('data-toggle', 'collapse');
   btn.setAttribute('data-target', '#toggleNav');
-  btn.className = 'navbar-toggler';
+  btn.className = 'navbar-toggler primary';
 
   const span = document.createElement('span');
   span.className = 'navbar-toggler-icon';
@@ -26,23 +26,20 @@ const myNav = () => {
 
   nav.appendChild(container);
 
-
-  // const navItems = document.createElement('nav');
-  // nav.appendChild(navItems);
+  console.log(nav)
 
   const ul = document.createElement('ul');
-  ul.className = 'navbar-nav mr-auto mt-2 mt-lg-0';
+  ul.className = 'navbar-nav p-2 mt-lg-0';
   container.appendChild(ul);
 
   const li = document.createElement('li');
-  li.className = 'nav-item';
+  li.className = 'nav-item mr-4 font-weight-bold';
   ul.appendChild(li);
 
   const a = document.createElement('a');
-  a.className = 'nav-link';
   li.appendChild(a);
 
-  a.innerHTML = 'Home';
+  a.innerHTML = 'HOME';
   a.addEventListener('click', () => {
     content.innerHTML = '';
     myNav();
@@ -52,7 +49,7 @@ const myNav = () => {
   li.appendChild(a);
 
   const li2 = document.createElement('li');
-  li2.className = 'nav-item';
+  li2.className = 'nav-item mr-4 font-weight-bold';
   const a2 = document.createElement('a');
   a2.innerHTML = 'CONTACT US';
   a2.addEventListener('click', () => {
@@ -64,7 +61,7 @@ const myNav = () => {
   li2.appendChild(a2);
 
   const li3 = document.createElement('li');
-  li3.className = 'nav-item';
+  li3.className = 'nav-item font-weight-bold';
 
   const a3 = document.createElement('a');
   a3.innerHTML = 'MENU';

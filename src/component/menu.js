@@ -1,3 +1,6 @@
+/* eslint-disable prefer-template */
+/* eslint-disable no-useless-concat */
+/* eslint-disable prefer-const */
 /* eslint-disable linebreak-style */
 /* eslint-disable no-trailing-spaces */
 /* eslint-disable linebreak-style */
@@ -5,7 +8,6 @@
 
 const menu = () => {
   const content = document.getElementById('content');
-  // container.className = styles['menu-main'];
 
   const firstDiv = document.createElement('div');
   firstDiv.className = 'container';
@@ -39,15 +41,10 @@ const menu = () => {
   col6.className = 'col-xs-12 clo-sm-12 col-md-6 col-lg-4 text-primary text-center select';
 
   let colSelect = document.querySelectorAll('.select');
-  // const menuContainer = document.createElement('div');
-  // menuContainer.className = 'menuContainer';
-  
-  // console.log(content);
   const imgArr = ['res', 'res1', 'res2', 're1', 'res4', 're1', 're2'];
   const desc = ['Jollof Rice', 'Banku and Okro', 'Akple and Fetri detsi', 'Beef Balls', 'Goat Soup', 'Salad'];
   const price = [20, 44, 33, 23, 12, 56, 100, 54];
   for (let i = 0; i < 6; i += 1) {
-    
     const description = `${desc[i] + ' ' + '$' + price[i]}`;
 
     const pdt = document.createElement('div');
