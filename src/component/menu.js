@@ -34,12 +34,12 @@ const menu = () => {
   row.appendChild(col5);
   row.appendChild(col6);
   
-  col.className = 'col-xs-12 clo-sm-12 col-md-6 col-lg-4 text-primary text-center select';
-  col2.className = 'col-xs-12 clo-sm-12 col-md-6 col-lg-4 text-primary text-center select';
-  col3.className = 'col-xs-12 clo-sm-12 col-md-6 col-lg-4 text-primary text-center select';
-  col4.className = 'col-xs-12 clo-sm-12 col-md-6 col-lg-4 text-primary text-center select';
-  col5.className = 'col-xs-12 clo-sm-12 col-md-6 col-lg-4 text-primary text-center select';
-  col6.className = 'col-xs-12 clo-sm-12 col-md-6 col-lg-4 text-primary text-center select';
+  col.className = 'col-xs-12 clo-sm-12 col-md-6 col-lg-4 text-primary text-center select neu p-2';
+  col2.className = 'col-xs-12 clo-sm-12 col-md-6 col-lg-4 text-primary text-center select neu p-2';
+  col3.className = 'col-xs-12 clo-sm-12 col-md-6 col-lg-4 text-primary text-center select neu p-2';
+  col4.className = 'col-xs-12 clo-sm-12 col-md-6 col-lg-4 text-primary text-center select neu p-2';
+  col5.className = 'col-xs-12 clo-sm-12 col-md-6 col-lg-4 text-primary text-center select neu p-2';
+  col6.className = 'col-xs-12 clo-sm-12 col-md-6 col-lg-4 text-primary text-center select neu p-2';
 
   let colSelect = document.querySelectorAll('.select');
   const imgArr = ['res', 'res1', 'res2', 're1', 'res4', 're1', 're2'];

@@ -6,6 +6,10 @@
 
 ## Screenshots
 
+### Large Screen
+<img src='dist/images/ss1.PNG' alt="">
+<img src='dist/images/ss2.PNG' alt="">
+<img src='dist/images/sss.PNG' alt="">
 
 
 ## Built With

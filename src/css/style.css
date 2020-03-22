@@ -63,9 +63,17 @@ footer {
     position: sticky;
     bottom: 0;
 }
-@media screen and(min-width: 768px) {
-    footer {
-        display: block;
-        background-color: black;
+.cb {
+    box-sizing: border-box;
+}
+.main-bg {
+    height: 12em;
+    width: 100%;
+    box-shadow: 5px 10px 5px rgba(184, 20, 20, 0.2), -5px -5px 5px rgb(168, 167, 167, 0.2);
+    background: url('../re.jpg') no-repeat;
+}
+@media only screen and (max-width: 600px) {
+    body {
+      /* background-color: lightblue; */
     }
 }

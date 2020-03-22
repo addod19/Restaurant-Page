@@ -21,44 +21,26 @@ const home = () => {
   introR.className = 'row mt-4';
 
   const introC4 = document.createElement('div');
-  introC4.className = 'col-xs-12 col-sm-12 col-md-3 col-lg-4';
+  introC4.className = 'col-xs-12 col-sm-12 col-md-5 col-lg-4 cb';
 
   const aside = document.createElement('aside');
   aside.className = 'jumbotron custom neu';
 
   const introC8 = document.createElement('div');
-  introC8.className = 'col-xs-12 col-sm-12 col-md-9 col-lg-8';
+  introC8.className = 'col-xs-12 col-sm-12 col-md-7 col-lg-8 mb-3';
 
-  const sliderContainer = document.createElement('div');
-  sliderContainer.className = 'slideshow-container neu';
-
-  const mySlides = document.createElement('div');
-  mySlides.className = 'mySlides fade';
-  mySlides.style.backgroundImage = '../dist/images/res1.jpg';
-
-  const slidImg = new Image();
-  slidImg.setAttribute('src', '../dist/images/res2.jpg');
-
-  const slidDesc = document.createElement('div');
-  slidDesc.className = 'text';
-  slidDesc.innerHTML = '<span>$400</span>';
-
-  introC8.appendChild(sliderContainer);
-  sliderContainer.appendChild(mySlides);
-  mySlides.appendChild(slidImg);
-  mySlides.appendChild(slidDesc);
-
+  const sliderContainer = document.createElement('main');
+  sliderContainer.className = 'main-bg';
 
   introWrap.appendChild(introR);
   introR.appendChild(introC4);
   introR.appendChild(introC8);
   introC4.appendChild(aside);
+  introC8.appendChild(sliderContainer);
 
   const heading = document.createElement('h2');
   heading.innerHTML = `
-  <i class="fa fa-cutlery mt-3 mr-2" aria-hidden="true"></i><span class="mt-2">YOU ARE WELCOME !!!</span><i class="fa fa-btc mt-3 ml-2"></i>
-
-  `;
+  <i class="fa fa-cutlery mt-3 mr-2" aria-hidden="true"></i><span class="mt-2">YOU ARE WELCOME !!!</span><i class="fa fa-btc mt-3 ml-2"></i>`;
   heading.className = 'heading text-center';
   main.appendChild(heading);
 
@@ -71,7 +53,8 @@ const home = () => {
   }
   main.appendChild(introWrap);
 
-
+  console.log(sliderContainer);
+  
 };
 
 export default home;
