@@ -1,19 +1,19 @@
 /* eslint-disable linebreak-style */
 import menu from './menu';
-import main from './main';
+import home from './home';
 import contact from './contact';
 
 const myNav = () => {
   const content = document.getElementById('content');
   const nav = document.createElement('nav');
-  nav.className = 'navbar navbar-expand-lg navbar-light bg-light custom';
+  nav.className = 'navbar navbar-expand-lg navbar-light custom';
   content.appendChild(nav);
 
   const btn = document.createElement('button');
   btn.setAttribute('type', 'button');
   btn.setAttribute('data-toggle', 'collapse');
   btn.setAttribute('data-target', '#toggleNav');
-  btn.className = 'navbar-toggler primary';
+  btn.className = 'navbar-toggler sec';
 
   const span = document.createElement('span');
   span.className = 'navbar-toggler-icon';
@@ -25,8 +25,6 @@ const myNav = () => {
   container.setAttribute('id', 'toggleNav');
 
   nav.appendChild(container);
-
-  console.log(nav)
 
   const ul = document.createElement('ul');
   ul.className = 'navbar-nav p-2 mt-lg-0';
@@ -43,7 +41,7 @@ const myNav = () => {
   a.addEventListener('click', () => {
     content.innerHTML = '';
     myNav();
-    main();
+    home();
   });
   ul.appendChild(li);
   li.appendChild(a);

@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable prefer-template */
 /* eslint-disable no-useless-concat */
 /* eslint-disable prefer-const */
@@ -57,7 +58,7 @@ const menu = () => {
     pdt.appendChild(img);
 
     const descrip = document.createElement('p');
-    descrip.className = 'description';
+    descrip.className = 'description bg-icon font-weight-bold';
     descrip.innerText = description;
     pdt.appendChild(descrip);
   }

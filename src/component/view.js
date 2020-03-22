@@ -8,21 +8,16 @@
 /* eslint-disable no-unused-expressions */
 // import main from './layout/main';
 
-// const content = document.querySelector('#content');
-// // content.style.backgroundImage = "url('re.jpg')";
-// content.appendChild(main());
-
-
 import myNav from './nav';
-import main from './main';
+import home from './home';
 
 const view = (() => {
     myNav();
-    main();
+    home();
 
     return {
         myNav,
-        main,
+        home,
     }
 })();
 

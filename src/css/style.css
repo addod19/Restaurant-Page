@@ -17,13 +17,12 @@
     color: white;
     text-align: center;
     border-radius: 1.5rem;
-    box-shadow: 5px 10px 5px rgba(0,0,0,0.4), -5px -5px 5px rgb(168, 167, 167);
+    box-shadow: 5px 10px 5px rgba(0,0,0,0.2), -5px -5px 5px rgba(184, 20, 20, 0.2);
 }
 .main1 {
     background: url('../re.jpg') cover;
     background-repeat: no-repeat;
     background: transparent;
-    border: 1px solid black;
     height: 30em;
     margin-top: 3em;
 }
@@ -51,7 +50,22 @@
 .primary {
     background-color: whitesmoke !important;
 }
-
-@media screen and(max-width: 768px) {
-
+.sec {
+    background-color: white;
+}
+.neu {
+    box-shadow: 5px 10px 5px rgba(184, 20, 20, 0.2), -5px -5px 5px rgb(168, 167, 167, 0.2);
+}
+footer {
+    height: 5em;
+    width: 100%;
+    background: red;
+    position: sticky;
+    bottom: 0;
+}
+@media screen and(min-width: 768px) {
+    footer {
+        display: block;
+        background-color: black;
+    }
 }
