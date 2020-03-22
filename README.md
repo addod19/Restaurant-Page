@@ -6,10 +6,20 @@
 
 ## Screenshots
 
-### Large Screen
+### Laptop/Desktop
 <img src='dist/images/ss1.PNG' alt="">
 <img src='dist/images/ss2.PNG' alt="">
 <img src='dist/images/sss.PNG' alt="">
+
+### Tablet
+<img src='dist/images/ss7.PNG' alt="">
+<img src='dist/images/ss8.PNG' alt="">
+<img src='dist/images/sss2.PNG' alt="">
+
+### Mobile
+<img src='dist/images/ss4.PNG' alt="">
+<img src='dist/images/ss5.PNG' alt="">
+<img src='dist/images/sss1.PNG' alt="">
 
 
 ## Built With
