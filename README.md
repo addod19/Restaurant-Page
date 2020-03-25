@@ -32,6 +32,7 @@
 
 ## Future Feature (V1.2)
 
+- Remove bootstrap cdn and import bootstrap (webpack)
 - Slider to display menu on home page
 - Improve nav
 - Add hover effect to display make order on menu page
