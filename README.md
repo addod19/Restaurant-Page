@@ -30,6 +30,14 @@
 - Webpack
 - Bootstrap
 
+## Future Feature (V1.2)
+
+- Slider to display menu on home page
+- Improve nav
+- Add hover effect to display make order on menu page
+- Re-position the nav on mobile device to the footer, to make it more mobile friendly
+
+
 ## Live Demo
 
 [Live Demo Link](https://addod19.github.io/Restaurant-Page/)
@@ -55,6 +63,7 @@ To get a local copy up and running follow these simple example steps.
 - Github: [@addod19](https://github.com/addod19)
 - Twitter: [@DanielLarbiAdd1](https://twitter.com/DanielLarbiAdd1)
 - Linkedin: [Daniel Larbi Addo](https://linkedin.com/in/daniel-larbi-addo/)
+- Email: (addodaniellarbi@gmail.com)
 
 
 ## 🤝 Contributing
