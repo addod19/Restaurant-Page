@@ -1,6 +1,6 @@
 # Restaurant Page 
 
-> Building a Restaurant page using vanilla Javascript.
+> Building a Restaurant page using vanilla Javascript.This project is part of a series of projects to be completed by students of microverse.org. Javascript es6 classes, es6 modules and webpack
 
 
 
