@@ -12,4 +12,4 @@
 import view from './component/view';
 
 
-view();
+view;

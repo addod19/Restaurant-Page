@@ -53,8 +53,6 @@ const home = () => {
   }
   main.appendChild(introWrap);
 
-  console.log(sliderContainer);
-  
 };
 
 export default home;
