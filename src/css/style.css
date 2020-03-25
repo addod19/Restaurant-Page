@@ -66,24 +66,3 @@
     box-shadow: 5px 10px 5px rgba(184, 20, 20, 0.2), -5px -5px 5px rgb(168, 167, 167, 0.2);
     background: url('../re.jpg') no-repeat;
 }
-.bottom-footer {
-    display: none;
-}
-@media only screen and (max-width: 600px) {
-    footer {
-        height: 3.4em;
-        width: 100%;
-        background: rgba(184, 20, 20, 0.5);
-        position: sticky;
-        margin-top: 70%;
-        bottom: 0;
-    }
-    /* .bottom-footer {
-        display: flex;
-        align-items: center;
-        margin-top: 70%;
-        justify-content: space-around;
-        width: 100%;
-        background: #B22222;
-    } */
-}
