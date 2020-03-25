@@ -5,7 +5,7 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable no-trailing-spaces */
 /* eslint-disable linebreak-style */
-// import styles from '../css/style.css';
+
 
 const menu = () => {
   const content = document.getElementById('content');

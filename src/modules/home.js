@@ -3,6 +3,8 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable indent */
 /* eslint-disable linebreak-style */
+
+
 const home = () => {
   const content = document.getElementById('content');
 
