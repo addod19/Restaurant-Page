@@ -53,6 +53,14 @@ To get a local copy up and running follow these simple example steps.
 3. Explore our site
 4. Make orders
 
+### To compile your javascript file and wait for changes to re-compile
+
+> run npx webpack --watch 
+
+### To check for linter errors and possible fix
+> run npx eslint .
+
+
 ### Prerequisites
 
 - A modern browser
