@@ -19,13 +19,13 @@
     border-radius: 1.5rem;
     box-shadow: 5px 10px 5px rgba(0,0,0,0.2), -5px -5px 5px rgba(184, 20, 20, 0.2);
 }
-.main1 {
+/* .main1 {
     background: url('../re.jpg') cover;
     background-repeat: no-repeat;
     background: transparent;
     height: 30em;
     margin-top: 3em;
-}
+} */
 .hover:hover {
     background: white !important;
     color: #B22222 !important;
