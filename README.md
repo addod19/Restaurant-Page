@@ -63,7 +63,8 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-- A modern browser
+- npm 6.13.4
+- yarn 1.22.0
 
 ## Authors
 
