@@ -60,7 +60,16 @@ To get a local copy up and running follow these simple example steps.
 ### To check for linter errors and possible fix
 > run npx eslint .
 
-
+```
+"devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "style-loader": "^1.1.3",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  }
+ ```
 ### Prerequisites
 
 - npm 6.13.4
