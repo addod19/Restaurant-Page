@@ -24,7 +24,7 @@ const menu = () => {
   const desc = ['Jollof Rice', 'Banku and Okro', 'Akple and Fetri detsi', 'Beef Balls', 'Goat Soup', 'Salad'];
   const price = [20, 44, 33, 23, 12, 56, 100, 54];
   for (let i = 0; i < 6; i += 1) {
-    const description = `${`${desc[i]} ` + `$${price[i]}`}`;
+    const description = `${`${desc[i]} `.concat(`${price[i]}`)}`;
 
     const pdt = document.createElement('div');
     pdt.className = 'product';
