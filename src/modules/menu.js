@@ -31,7 +31,7 @@ const menu = () => {
     colSelect[i].appendChild(pdt);
 
     const img = new Image();
-    img.setAttribute('src', `../dist/images/${imgArr[i]}.jpg`);
+    img.setAttribute('src', `Restaurant-Page/dist/images/${imgArr[i]}.jpg`);
     img.className = 'img img-rounded';
     pdt.appendChild(img);
 
