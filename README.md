@@ -53,9 +53,27 @@ To get a local copy up and running follow these simple example steps.
 3. Explore our site
 4. Make orders
 
+### To compile your javascript file and wait for changes to re-compile
+
+> run npx webpack --watch 
+
+### To check for linter errors and possible fix
+> run npx eslint .
+
+```
+"devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "style-loader": "^1.1.3",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  }
+ ```
 ### Prerequisites
 
-- A modern browser
+- npm 6.13.4
+- yarn 1.22.0
 
 ## Authors
 
