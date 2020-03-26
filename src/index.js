@@ -1,16 +1,6 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable no-multiple-empty-lines */
-/* eslint-disable linebreak-style */
-/* eslint-disable semi */
-/* eslint-disable no-console */
-/* eslint-disable indent */
-/* eslint-disable linebreak-style */
-/* eslint-disable no-unused-expressions */
-/* eslint-disable linebreak-style */
 import menu from './modules/menu';
 import home from './modules/home';
 import contact from './modules/contact';
-
 
 const tabSwitch = () => {
   const content = document.getElementById('content');

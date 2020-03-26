@@ -1,6 +1,3 @@
-/* eslint-disable linebreak-style */
-
-
 const contact = () => {
   const content = document.getElementById('content');
 
@@ -64,11 +61,7 @@ const contact = () => {
   whatsapp.className = 'fa fa-whatsapp fa-2x p-4 bg-icon';
   linkedin.className = 'fa fa-linkedin fa-2x p-4 bg-icon';
 
-  innerIconRow.appendChild(facebook);
-  innerIconRow.appendChild(twitter);
-  innerIconRow.appendChild(whatsapp);
-  innerIconRow.appendChild(linkedin);
-
+  innerIconRow.append(facebook, twitter, whatsapp, linkedin);
   container.appendChild(iconsContainer);
 };
 

@@ -1,10 +1,3 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable padded-blocks */
-/* eslint-disable linebreak-style */
-/* eslint-disable indent */
-/* eslint-disable linebreak-style */
-
-
 const home = () => {
   const content = document.getElementById('content');
 
@@ -35,8 +28,7 @@ const home = () => {
   sliderContainer.className = 'main-bg';
 
   introWrap.appendChild(introR);
-  introR.appendChild(introC4);
-  introR.appendChild(introC8);
+  introR.append(introC4, introC8);
   introC4.appendChild(aside);
   introC8.appendChild(sliderContainer);
 
@@ -47,14 +39,13 @@ const home = () => {
   main.appendChild(heading);
 
   const text = ['We have a variety of local and continental dishes you can choose from',
-      'Free delivery within Accra and Tema', '+233207312909'];
+    'Free delivery within Accra and Tema', '+233207312909'];
   for (let i = 0; i < text.length; i += 1) {
     const element = document.createElement('p');
     element.innerHTML = text[i];
     aside.appendChild(element);
   }
   main.appendChild(introWrap);
-
 };
 
 export default home;
