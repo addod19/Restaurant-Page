@@ -32,6 +32,7 @@ const menu = () => {
 
     const img = new Image();
     img.setAttribute('src', `https://addod19.github.io/Restaurant-Page/images/${imgArr[i]}.jpg`);
+
     img.className = 'img img-rounded';
     pdt.appendChild(img);
 
