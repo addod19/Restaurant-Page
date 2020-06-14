@@ -22,7 +22,8 @@ const home = () => {
   aside.className = 'jumbotron custom neu';
 
   const introC8 = document.createElement('div');
-  introC8.className = 'col-xs-12 col-sm-12 col-md-7 col-lg-8 mb-3';
+  introC8.className = 'col-xs-12 col-sm-12 col-md-7 col-lg-8 mb-3 c8bg';
+  introC8.backgroundImage = "url('./images/res.jpg')";
 
   const sliderContainer = document.createElement('main');
   sliderContainer.className = 'main-bg';

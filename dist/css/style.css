@@ -60,3 +60,8 @@
     box-shadow: 5px 10px 5px rgba(184, 20, 20, 0.2), -5px -5px 5px rgb(168, 167, 167, 0.2);
     background: url('../images/re.jpg') no-repeat;
 }
+
+.c8bg {
+    background-image: url('../../src/images/re.jpg');
+    height: 100%;
+}
