@@ -23,6 +23,7 @@ const home = () => {
 
   const introC8 = document.createElement('div');
   introC8.className = 'col-xs-12 col-sm-12 col-md-7 col-lg-8 mb-3';
+  introC8.backgroundImage = "url('https://addod19.github.io/Restaurant-Page/images/re.jpg')";
 
   const sliderContainer = document.createElement('main');
   sliderContainer.className = 'main-bg';
