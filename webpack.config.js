@@ -10,6 +10,14 @@ module.exports = {
           'css-loader',
         ],
       },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: ['file-loader'],
+      },
+      {
+        test: /\.(png|svg|jpg|gif|jpeg)$/,
+        use: ['file-loader'],
+      },
     ],
   },
 };
